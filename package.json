@@ -1,0 +1,29 @@
+{
+  "name": "lol-scraper",
+  "version": "1.0.0",
+  "description": "Scrape player info",
+  "main": "hunter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node hunter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phieudu241/lol-scraper.git"
+  },
+  "keywords": [
+    "lol-scraper"
+  ],
+  "author": "dungle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phieudu241/lol-scraper/issues"
+  },
+  "homepage": "https://github.com/phieudu241/lol-scraper#readme",
+  "dependencies": {
+    "cheerio": "latest",
+    "express": "latest",
+    "lodash": "^4.16.4",
+    "request": "latest"
+  }
+}
