@@ -90,3 +90,58 @@ II. Item
 2. Prior item (Item Tree)
 3. Champion who frequently uses this item
 Champion - Usage - Overall contrast
+
+-------------------------------------------------------------------------------------------
+Design:
+** Notes:
+- Should have a table for skill
+- Display skill as a popover
+
+** Resources
+- Get description of a skill
+Url:
+http://lol.gamemeca.com/champion/getSkillTooltip.php?menu=skill&toolId=117_1
+
+
+** Model
+Champion Model:
+Url: http://lol.gamemeca.com/champion/info.php?cid=117
+- Shortname_kr (text|base)
+- Fullname_kr (text|base) 
+- Type_kr... (text|base)
+- Description_kr (text|base)
+- Popular spells ? (http://lol.gamemeca.com/champion/total.php?cid=117|http://lol.gamemeca.com/champion/skill.php?cid=117)
+- S
+- Skills list_ids (should store skill ids: 117_1,117_2,...) (http://lol.gamemeca.com/champion/skill.php?cid=117)
+- Skills list_names_kr (name1,name2,...) (http://lol.gamemeca.com/champion/skill.php?cid=117)
+- Skill Recommended season 6 (should store skill ids: 117_1,117_2,...) (http://lol.gamemeca.com/champion/skill.php?cid=117)
+- Skill Recommended CJ BDD (should store skill ids: 117_1,117_2,...) (http://lol.gamemeca.com/champion/skill.php?cid=117)
+- Skill Recommended SKT Faker (should store skill ids: 117_1,117_2,...) (http://lol.gamemeca.com/champion/skill.php?cid=117)
+- Item Polular_ids (should store item ids: 1056,1057,...) (http://lol.gamemeca.com/champion/item.php?cid=117)
+- Item Polular_names_kr (should store: name1,name1,...) (http://lol.gamemeca.com/champion/item.php?cid=117)
+- Item Polular_overall_contrast (should store: 5%,11%,...) (http://lol.gamemeca.com/champion/item.php?cid=117)
+- Item Recommended season 6 (should store item ids: 1056,1057,...) (http://lol.gamemeca.com/champion/item.php?cid=117)
+- Item Recommended CJ BDD (should store item ids: 1056,1057,...) (http://lol.gamemeca.com/champion/item.php?cid=117)
+- Item Recommended SKT Faker (should store item ids: 1056,1057,...) (http://lol.gamemeca.com/champion/item.php?cid=117)
+- Characterictics season 6: should be a imageUrl (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=spec&seq=1)
+- Characterictics CJ BDD: should be a imageUrl (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=spec&seq=2)
+- Characterictics SKT Faker: should be a imageUrl (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=spec&seq=3)
+- Rune Recommended season 6_image_ids (should store: 5357,5358,...) (http://lol.gamemeca.com/champion/
+getTree.php?cid=117&menu=rune&seq=1)
+- Rune Recommended season 6_numbers (should store: 3,6,6,9,...) (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=rune&seq=1)
+- Rune Recommended season 6_texts_kr (should store: text1,text2,...) (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=rune&seq=1)
+- Rune Recommended CJ BDD_image_ids (should store: 5357,5358,...) (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=rune&seq=2)
+- Rune Recommended CJ BDD_numbers (should store: 3,6,6,9,...) (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=rune&seq=2)
+- Rune Recommended CJ BDD_texts_kr (should store: text1,text2,...) (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=rune&seq=2)
+- Rune Recommended SKT Faker_image_ids (should store: 5357,5358,...) (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=rune&seq=3)
+- Rune Recommended SKT Faker_numbers (should store: 3,6,6,9,...) (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=rune&seq=3)
+- Rune Recommended SKT Faker_texts_kr (should store: text1,text2,...) (http://lol.gamemeca.com/champion/getTree.php?cid=117&menu=rune&seq=3)
+- Counter_champion_ids (should store champion ids: id1, id2,...) (http://lol.gamemeca.com/champion/counter.php?cid=117)
+- Counter_champion_descriptions (dynamic) --> need to join champion table to get description
+- Counter_deal_champion_ids (should store champion ids: id1, id2,...) (http://lol.gamemeca.com/champion/counter.php?cid=117)
+- Counter_deal_champion_descriptions (dynamic) --> need to join champion table to get description
+- Statistic_Odds (http://lol.gamemeca.com/champion/etc.php?cid=117)
+- Statistic_Pitch (http://lol.gamemeca.com/champion/etc.php?cid=117)
+- Statistic_AvgKDA (http://lol.gamemeca.com/champion/etc.php?cid=117)
+- Statistic_AvgCS (http://lol.gamemeca.com/champion/etc.php?cid=117)
+
